@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bahn Beschwerde Email Generator × OblivionCoding</title>
+    <title>Bahn Beschwerde Email Generator × GoAhead ✓ DB ✓ Verkehrsministerium ✓</title>
     <meta name="description"
           content="Automatischer Bahn Beschwerde Email Generator. Beschwerde Email innerhalb von Sekunden! Beschwerde bei DB, GoAhead und dem Verkehrsministerium möglich.">
+    <meta property="og:description"
+          content="Automatischer Bahn Beschwerde Email Generator. Beschwerde Email innerhalb von Sekunden! Beschwerde bei DB, GoAhead und dem Verkehrsministerium möglich.">
+    <meta name="robots" content="all">
+    <meta property="og:title"
+          content="Bahn Beschwerde Email Generator: Für GoAhead, die Deutsche Bahn und das Verkehrsministerium">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://bahn.oblivioncoding.pro/"/>
+    <meta property="og:site_name" content="OblivionCoding"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title"
+          content="Bahn Beschwerde Email Generator: Für GoAhead, die Deutsche Bahn und das Verkehrsministerium"/>
+    <meta name="twitter:description"
+          content="Automatischer Bahn Beschwerde Email Generator. Beschwerde Email innerhalb von Sekunden! Beschwerde bei DB, GoAhead und dem Verkehrsministerium möglich."/>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -136,7 +150,7 @@ EOF;
 function copyText() {
   var copyText = document.getElementById("generatedEmail");
   copyText.select();
-  copyText.setSelectionRange(0, 99999)
+  copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
   alert("Text kopiert");
 }
