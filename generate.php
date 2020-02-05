@@ -140,11 +140,14 @@ EOF;
             <script type="application/javascript" src="js/dark-mode-switch.min.js"></script>
         </div>
 </div>
-    
-<div class="form-group text-center">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group text-center">
 <!--    <label for="generatedEmail">Generierte Email</label>-->
-    <textarea class="form-control" id="generatedEmail" rows="20">$message</textarea>
-    <button id="copyButton" class="btn btn-info m-2" onclick="copyText()">Text Kopieren</button>
+            <textarea class="form-control" id="generatedEmail" rows="20">$message</textarea>
+            <button id="copyButton" class="btn btn-info m-2" onclick="copyText()">Text Kopieren</button>
+        </div>
+    </div>
 </div>
 <script>
 function copyText() {
@@ -155,6 +158,27 @@ function copyText() {
   alert("Text kopiert");
 }
 </script>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label for="dbemail">Deutsche Bahn</label>
+            <input type="email" readonly="true" id="dbemail" class="form-control form-text text-muted" value="kundendialog@bahn.de">
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label for="goaheademail">GoAhead</label>
+            <input type="email" readonly="true" id="goaheademail" class="form-control form-text text-muted" value="service@gabw-bahn.de">
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label for="verkehrsministeriumemail">Verkehrsministerium</label>
+            <input type="email" readonly="true" id="verkehrsministeriumemail" class="form-control form-text text-muted" value="Poststelle@vm.bwl.de">
+        </div>
+    </div>
+</div>
 
 <div class="text-center m-5">
 EOF;

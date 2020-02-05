@@ -73,9 +73,15 @@
         <div class="row">
             <div class="col-lg-2">
                 <select class="form-control custom-select" name="zugtyp">
+                    <option>S</option>
+                    <option>U</option>
                     <option>RB</option>
                     <option>RE</option>
                     <option>IRE</option>
+                    <option>IC</option>
+                    <option>ICE</option>
+                    <option>EC</option>
+                    <option>ECE</option>
                 </select>
             </div>
             <div class="col-lg-4">
