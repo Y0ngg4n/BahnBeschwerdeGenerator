@@ -6,6 +6,8 @@ RUN apt-get update -y \
 COPY nginx-site.conf /etc/nginx/sites-enabled/default
 COPY entrypoint.sh /etc/entrypoint.sh
 
+RUN chmod +x /etc/entrypoint.sh
+
 COPY --chown=www-data:www-data . /var/www/html
 
 WORKDIR /var/www/html
